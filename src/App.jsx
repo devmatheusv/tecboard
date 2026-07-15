@@ -1,9 +1,22 @@
 import './App.css'
 
+// no react, componentes são FUNÇÕES
+
+//props é um OBJETO
+//props.children
+function TituloDoFormulario(props) {
+  return (
+    <h2>texto</h2>
+  )
+}
+
 function FormularioDeEventos() {
+  
   return (
     <form className='form-evento'>
-      <h2>Preencha para criar um evento:</h2>
+      <TituloDoFormulario>
+        Preencha para criar um evento:
+      </TituloDoFormulario>
       <fieldset>
         <label htmlFor="nome">
           Qual o nome do evento?
