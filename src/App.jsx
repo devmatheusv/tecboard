@@ -3,10 +3,12 @@ import './App.css'
 // no react, componentes são FUNÇÕES
 
 //props é um OBJETO
-//props.children
+//props.children - é usado para pegar o filho de TituloDoFormulario dinamicamente usando parametros
 function TituloDoFormulario(props) {
   return (
-    <h2>texto</h2>
+    <h2>
+      {props.children}
+    </h2>
   )
 }
 
@@ -20,7 +22,7 @@ function FormularioDeEventos() {
       <fieldset>
         <label htmlFor="nome">
           Qual o nome do evento?
-          <input type="text" id='nome'/>
+          <input type="text" id='nome' placeholder='Summer dev hits'/>
         </label>
       </fieldset>
     </form>
