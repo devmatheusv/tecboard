@@ -15,6 +15,7 @@ function TituloDoFormulario(props) {
 function CampoDeFormulario({ children }) {
   // Você não precisa mais escrever props.children. 
   // O React já "descompactou" o objeto e te deu a variável children prontinha.
+  
   return(
     <fieldset>
       {children}
@@ -22,9 +23,10 @@ function CampoDeFormulario({ children }) {
   )
 }
 
-function Label({ children }) {
-  renturn(
-    <label>
+function Label({ children, htmlFor }) {
+  
+  return(
+    <label htmlFor={htmlFor}>
       {children}
     </label>
   )
@@ -38,10 +40,10 @@ function FormularioDeEventos() {
         Preencha para criar um evento:
       </TituloDoFormulario>
       <CampoDeFormulario>
-        <label htmlFor="nome">
+        <Label htmlFor="nome">
           Qual o nome do evento?
           <input type="text" id='nome' placeholder='Summer dev hits'/>
-        </label>
+        </Label>
       </CampoDeFormulario>
     </form>
   )
