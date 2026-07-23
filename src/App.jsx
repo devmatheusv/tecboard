@@ -22,6 +22,14 @@ function CampoDeFormulario({ children }) {
   )
 }
 
+function Label({ children }) {
+  renturn(
+    <label>
+      {children}
+    </label>
+  )
+}
+
 function FormularioDeEventos() {
   
   return (
@@ -29,15 +37,16 @@ function FormularioDeEventos() {
       <TituloDoFormulario>
         Preencha para criar um evento:
       </TituloDoFormulario>
-      <fieldset>
+      <CampoDeFormulario>
         <label htmlFor="nome">
           Qual o nome do evento?
           <input type="text" id='nome' placeholder='Summer dev hits'/>
         </label>
-      </fieldset>
+      </CampoDeFormulario>
     </form>
   )
 }
+
 
 function App() {
   return (
