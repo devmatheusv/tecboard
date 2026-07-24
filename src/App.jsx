@@ -32,6 +32,10 @@ function Label({ children, htmlFor }) {
   )
 }
 
+function CampoDeEntrada(props) {
+  return <input {...props} />
+}
+
 function FormularioDeEventos() {
   
   return (
@@ -42,8 +46,13 @@ function FormularioDeEventos() {
       <CampoDeFormulario>
         <Label htmlFor="nome">
           Qual o nome do evento?
-          <input type="text" id='nome' placeholder='Summer dev hits'/>
         </Label>
+        <CampoDeEntrada 
+        type="text" 
+        id='nome' 
+        placeholder='Summer dev hits' 
+        name='nomeEvento' 
+      />
       </CampoDeFormulario>
     </form>
   )
