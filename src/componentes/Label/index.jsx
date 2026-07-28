@@ -1,7 +1,7 @@
 import './label.estilos.css'
 export function Label({ children, htmlFor }) {
-  
-  return(
+
+  return (
     <label htmlFor={htmlFor} className='label-form'>
       {children}
     </label>
