@@ -4,6 +4,7 @@ import { CampoDeFormulario } from "../CampoDeFormulario";
 import { Label } from "../Label";
 import { TituloDoFormulario } from "../TituloDoFormulario";
 import { Botao } from '../Botão';
+import { ListaSuspensa } from '../ListaSuspensa';
 
 export function FormularioDeEventos() {
 
@@ -33,6 +34,12 @@ export function FormularioDeEventos() {
             id='dataEvento'
             name='dataEvento'
           />
+        </CampoDeFormulario>
+        <CampoDeFormulario>
+          <Label htmlFor="dataEvento">
+            Data do Evento:
+          </Label>
+          <ListaSuspensa/>
         </CampoDeFormulario>
       </div>
       <div className='acoes'>
