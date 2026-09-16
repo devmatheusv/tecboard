@@ -37,7 +37,7 @@ export function FormularioDeEventos() {
         </CampoDeFormulario>
         <CampoDeFormulario>
           <Label htmlFor="dataEvento">
-            Data do Evento:
+            Escolha um campo:
           </Label>
           <ListaSuspensa/>
         </CampoDeFormulario>
