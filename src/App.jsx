@@ -1,5 +1,6 @@
 import './App.css'
 import { Banner } from './componentes/Banner'
+import { CardEvento } from './componentes/CardEvento'
 import { FormularioDeEventos } from './componentes/FormularioDeEventos'
 import { Tema } from './componentes/Tema'
 // no react, componentes são FUNÇÕES
@@ -35,10 +36,10 @@ function App() {
 
   const eventos = [
     {
-      capa: 'http://...',
+      capa: 'https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png',
       tema: temas[0], 
       data: new Date(),
-      titulo: 'Mulheres no Front'
+      titulo: 'Mulheres no Front',
     }
   ]
 
@@ -53,7 +54,7 @@ function App() {
         return (
           <section key={item.id}>
             <Tema tema={item} />
-            <CardEvento evento={} />
+            <CardEvento evento={eventos[0]} />
           </section>
         )
       })}
