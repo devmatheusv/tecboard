@@ -50,6 +50,7 @@ function App() {
 
       {  
       /*
+      **essas sections são uma forma de fazer mais primitiva/burra, se aparecer novos valores na array, nao criará uma saction nova**
       <section>
         <Tema tema={temas[0]} />
       </section>
