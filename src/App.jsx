@@ -33,6 +33,15 @@ function App() {
     },
   ]
 
+  const eventos = [
+    {
+      capa: 'http://...',
+      tema: temas[0], 
+      data: new Date(),
+      titulo: 'Mulheres no Front'
+    }
+  ]
+
   return (
     <main>
       <header>
@@ -44,6 +53,7 @@ function App() {
         return (
           <section key={item.id}>
             <Tema tema={item} />
+            <CardEvento evento={} />
           </section>
         )
       })}
