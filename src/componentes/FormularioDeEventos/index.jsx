@@ -15,7 +15,7 @@ export function FormularioDeEventos({ temas }) {
       </TituloDoFormulario>
       <div className='campos'>
         <CampoDeFormulario>
-          <Label htmlFor="nome">
+          <Label htmlFor="nomeEvento">
             Qual o nome do evento?
           </Label>
           <CampoDeEntrada
@@ -23,6 +23,17 @@ export function FormularioDeEventos({ temas }) {
             id='nome'
             placeholder='Summer dev hits'
             name='nomeEvento'
+          />
+        </CampoDeFormulario>
+                <CampoDeFormulario>
+          <Label htmlFor="capa">
+            Qual o endereço da capa? 
+          </Label>
+          <CampoDeEntrada
+            type="text"
+            id='capa'
+            placeholder='http://...'
+            name='capa'
           />
         </CampoDeFormulario>
         <CampoDeFormulario>
