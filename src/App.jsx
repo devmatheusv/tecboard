@@ -34,7 +34,7 @@ function App() {
     },
   ]
 
-  const [eventos] = useState ([
+  const [eventos, setEventos] = useState ([
     {
       capa: 'https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png',
       tema: temas[0],
@@ -44,8 +44,9 @@ function App() {
   ])
 
   function adicionarEvento(evento) {
-    eventos.push(evento)
-    console.log('eventos => ', eventos)
+    // eventos.push(evento)
+    // console.log('eventos => ', eventos)
+    setEventos([...eventos, evento])
   }
 
   return (
